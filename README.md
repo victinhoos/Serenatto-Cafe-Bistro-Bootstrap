@@ -1,6 +1,7 @@
 <div align="center">
     <img src = "https://github.com/user-attachments/assets/4da5214c-8bc4-4ac2-a1f8-c332fc7490e3">
 </div>
+
 # ☕ Serenatto – Café & Bistrô
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
