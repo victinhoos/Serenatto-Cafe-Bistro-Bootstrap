@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serenatto - Café & Bistrô</title>
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="Logo Serenatto"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/logo-mobile.png" alt="Logo Mobile">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="form-check form-switch pt-2">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Modo escuro</label>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banners banners-1 d-flex flex-column justify-content-center text-center">
+      <div class="banners-titulo bg-body-secondary py-5">
+        <h2 class="fw-bold">Bem-vindo ao Serenatto</h2>
+        <p>O seu refúgio de sabores e momentos.</p>
+      </div>
+    </section>
+
+    <section class="banners banner-2 d-flex flex-column justify-content-center text-center">
+      <div class="banners-titulo bg-body-secondary text-center py-5">
+        <h2 class="fw-bold">Portas abertas para todos os públicos.</h2>
+        <p>Nosso espaço é aconchegante para receber crianças, pessoas com deficiência e coworking.</p>
+      </div>
+    </section>
+
+    <section class="banners banner-3">
+    </section>
+
+    <section class="py-5 bg-light">
+      <h2 class="text-center fw-bold pb-1">Nossos serviços</h2>
+
+      <div class="container d-flex justify-content-around flex-wrap">
+
+        <div class="card m-4 border-0 shadow-sm" style="width: 20rem;">
+          <img src="./assets/cafe-card.png" class="card-img-top"
+            alt="Balcão de padaria tradicional com alimentos diversos">
+          <div class="card-body">
+            <h5 class="card-title py-2 fw-bold">Café & Bistrô</h5>
+            <p class="card-text">Nosso bistrô oferece uma ampla variedade de cafés, smoothies, deliciosos
+              salgados e sobremesas. Uma excelente opção para quem busca um lugar tranquilo.</p>
+            <a href="#" class="btn botao-padrao w-100 fw-bold">Quero detalhes</a>
+          </div>
+        </div>
+
+        <div class="card m-4 border-0 shadow-sm" style="width: 20rem;">
+          <img src="./assets/buffet-card.png" class="card-img-top" alt="Mesa de buffet com alimentos diversos">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Buffet</h5>
+            <p class="card-text">Buffet e catering personalizado para eventos, produções e celebrações. Com
+              um menu variado e adaptável às preferências do cliente.</p>
+            <a href="#" class="btn btn-primary w-100 fw-bold mt-3">Quero detalhes</a>
+          </div>
+        </div>
+
+        <div class="card m-4 border-0 shadow-sm" style="width: 20rem;">
+          <img src="./assets/delivery-card.png" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Delivery</h5>
+            <p class="card-text">Para quem deseja desfrutar no conforto de casa, oferecemos delivery dos
+              produtos. Com o mesmo cardápio variado de sempre.</p>
+            <a href="#" class="btn botao-padrao w-100 fw-bold mt-3">Quero detalhes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 container">
+      <h2 class="fw-bold text-center pb-4">Nossos produtos</h2>
+
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="card border-0 text-center" data-bs-toggle="modal" data-bs-target="#modal-1" style="width: 18rem;">
+            <img src="./assets/produtos-cafe-tradicional.png" class="card-img-top" alt="Café preto">
+            <div class="card-body">
+              <h3 class="card-text fw-bold">Cafés Tradicionais</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="card border-0 text-center" data-bs-toggle="modal" data-bs-target="#modal-2" style="width: 18rem;">
+            <img src="./assets/produtos-cafe-especial.png" class="card-img-top" alt="Café especial com latte art">
+            <div class="card-body">
+              <h3 class="card-text fw-bold">Cafés Especiais</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="card border-0 text-center" data-bs-toggle="modal" data-bs-target="#modal-3" style="width: 18rem;">
+            <img src="./assets/produtos-doces.png" class="card-img-top" alt="Bolo de morango">
+            <div class="card-body">
+              <h3 class="card-text fw-bold">Doces</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="card border-0 text-center" data-bs-toggle="modal" data-bs-target="#modal-4" style="width: 18rem;">
+            <img src="./assets/produtos-salgados.png" class="card-img-top" alt="Torta salgada">
+            <div class="card-body">
+              <h3 class="card-text fw-bold">Salgados</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="card border-0 text-center" data-bs-toggle="modal" data-bs-target="#modal-5" style="width: 18rem;">
+            <img src="./assets/produtos-paes.png" class="card-img-top" alt="Cesta de pães">
+            <div class="card-body">
+              <h3 class="card-text fw-bold">Pães</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="card border-0 text-center" data-bs-toggle="modal" data-bs-target="#modal-6" style="width: 18rem;">
+            <img src="./assets/produtos-vitaminas.png" class="card-img-top" alt="Vitaminas coloridas">
+            <div class="card-body">
+              <h3 class="card-text fw-bold">Vitaminas</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4 bg-dark text-white">
+    <p class="m-0">&copy; 2024 Serenatto Café & Bistrô. Todos os direitos reservados.</p>
+  </footer>
+
+  <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="label-modal-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="label-modal-1">Cafés Tradicionais</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/produtos-cafe-tradicional.png" class="w-100 mb-3 rounded" alt="Xícara de café preto">
+          <p>O café Serenatto é conhecido por seus blends tradicionais e saborosos, que agradam aos amantes da bebida. Nossos grãos são cuidadosamente selecionados e torrados para produzir um aroma rico e sabor equilibrado.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="label-modal-2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="label-modal-2">Cafés Especiais</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/produtos-cafe-especial.png" class="w-100 mb-3 rounded" alt="Café Especial">
+          <p>Nossos cafés especiais trazem notas sensoriais únicas, com grãos de origem controlada e torra artesanal. Perfeito para quem busca uma experiência diferenciada a cada gole.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="label-modal-3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="label-modal-3">Doces Finos</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/produtos-doces.png" class="w-100 mb-3 rounded" alt="Doces">
+          <p>Nossa confeitaria produz diariamente bolos, tortas e doces finos com ingredientes frescos. Do clássico bolo de chocolate às tortas de frutas da estação.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="label-modal-4" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="label-modal-4">Salgados Artesanais</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/produtos-salgados.png" class="w-100 mb-3 rounded" alt="Salgados">
+          <p>Quiches, empadas e tortas salgadas feitas na hora. Massa crocante e recheios generosos para o seu lanche da tarde ou café da manhã reforçado.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-5" tabindex="-1" aria-labelledby="label-modal-5" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="label-modal-5">Pães de Fermentação Natural</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/produtos-paes.png" class="w-100 mb-3 rounded" alt="Pães">
+          <p>Nossos pães passam por um longo processo de fermentação natural, garantindo sabor intenso, casca crocante e miolo macio. Temos baguetes, ciabattas e integrais.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-6" tabindex="-1" aria-labelledby="label-modal-6" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="label-modal-6">Vitaminas & Sucos</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/produtos-vitaminas.png" class="w-100 mb-3 rounded" alt="Vitaminas">
+          <p>Refresque-se com nossas opções de vitaminas e smoothies feitos com frutas frescas selecionadas. Energia e saúde em cada copo.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const checkbox = document.getElementById('flexSwitchCheckDefault');
+    const html = document.querySelector('html');
+
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) {
+        html.setAttribute('data-bs-theme', 'dark');
+      } else {
+        html.setAttribute('data-bs-theme', 'light');
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
